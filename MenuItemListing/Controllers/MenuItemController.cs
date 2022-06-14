@@ -31,9 +31,8 @@ namespace MenuItemListing.Controllers
                 new MenuItem() {Id=2, Name="Laptop", Active=false, DateOfLaunch=new DateTime(2018,10,03), FreeDelivery=false,Price=200}
 
             };
-            MenuItem obj = MenuList.SingleOrDefault(item => item.Id == id);
-            return obj;
-            
+            return MenuList.SingleOrDefault(item => item.Id == id);
+
         }
 
     }
